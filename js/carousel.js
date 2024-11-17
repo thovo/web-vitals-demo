@@ -1,32 +1,32 @@
 import { Carousel } from 'bootstrap';
 const carouselData = [
     {
-        src: '/images/1.jpg',
+        src: '/images/1.avif',
         caption: '1',
         alt: '1',
     },
     {
-        src: '/images/2.jpg',
+        src: '/images/2.avif',
         caption: '2',
         alt: '2',
     },
     {
-        src: '/images/3.jpg',
+        src: '/images/3.avif',
         caption: '3',
         alt: '3',
     },
     {
-        src: '/images/4.jpg',
+        src: '/images/4.avif',
         caption: '1',
         alt: '1',
     },
     {
-        src: '/images/5.jpg',
+        src: '/images/5.avif',
         caption: '2',
         alt: '2',
     },
     {
-        src: '/images/6.jpg',
+        src: '/images/6.avif',
         caption: '3',
         alt: '3',
     },
