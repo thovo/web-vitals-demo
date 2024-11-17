@@ -5,26 +5,55 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>An application to show case Web Vitals Optimization</title>
-  <script type="module" src="/main.js"></script>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/js/performance.js"></script>
+  <link rel="preload" href="./images/1.avif" as="image">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
   <div class="container">
     <h1>Web Vitals showcases</h1>
     <h2>Show you how to apply some tips to optimize Largest Contentful Paint</h2>
-    <div id="simpleCarousel" class="carousel slide h-25 mh-25" style="max-height: 400px;min-height: 400px;">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="/images/1.avif" class="d-block w-100 h-50" alt="1" fetchpriority="high">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/2.avif" class="d-block w-100 h-50" alt="2" fetchpriority="low">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/3.avif" class="d-block w-100 h-50" alt="3" fetchpriority="low">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/4.avif" class="d-block w-100 h-50" alt="4" fetchpriority="low">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/5.avif" class="d-block w-100 h-50" alt="5" fetchpriority="low">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/6.avif" class="d-block w-100 h-50" alt="6" fetchpriority="low">
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <span>Nulla in dolore magna pariatur do ad. Fugiat veniam ea commodo commodo est quis laborum veniam dolor cillum.
       Anim nulla ullamco cupidatat ex. Eu in Lorem magna id incididunt culpa ea cupidatat fugiat labore eiusmod elit in.
       Esse sint cupidatat sunt esse consequat quis tempor in nisi dolore reprehenderit magna laborum pariatur. Id ea do
       magna ad magna ut exercitation incididunt esse.</span>
   </div>
+  <script src="/js/performance.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
