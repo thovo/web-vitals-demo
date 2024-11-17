@@ -15,6 +15,21 @@ const carouselData = [
         caption: '3',
         alt: '3',
     },
+    {
+        src: '/images/4.jpg',
+        caption: '1',
+        alt: '1',
+    },
+    {
+        src: '/images/5.jpg',
+        caption: '2',
+        alt: '2',
+    },
+    {
+        src: '/images/6.jpg',
+        caption: '3',
+        alt: '3',
+    },
 ];
 
 function generateCarouselInnerItem(data, index) {
