@@ -10,9 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>An application to show case Web Vitals Optimization</title>
-  <script type="module" src="/main.js"></script>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/js/performance.js"></script>
+
 </head>
 
 <body>
@@ -20,11 +18,88 @@
     <h1>Web Vitals showcases</h1>
     <h2>Show you how to apply some tips to optimize Largest Contentful Paint</h2>
     <div id="simpleCarousel" class="carousel slide h-25 mh-25" style="max-height: 400px;min-height: 400px;">
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#simpleCarousel" class="active" data-bs-slide-to="0" aria-label="Slide 0">
+        </button>
+
+        <button type="button" data-bs-target="#simpleCarousel" class="" data-bs-slide-to="1" aria-label="Slide 1">
+        </button>
+
+        <button type="button" data-bs-target="#simpleCarousel" class="" data-bs-slide-to="2" aria-label="Slide 2">
+        </button>
+
+        <button type="button" data-bs-target="#simpleCarousel" class="" data-bs-slide-to="3" aria-label="Slide 3">
+        </button>
+
+        <button type="button" data-bs-target="#simpleCarousel" class="" data-bs-slide-to="4" aria-label="Slide 4">
+        </button>
+
+        <button type="button" data-bs-target="#simpleCarousel" class="" data-bs-slide-to="5" aria-label="Slide 5">
+        </button>
+
+      </div>
+      <div class="carousel-inner" style="max-height: 400px;">
+
+        <div class="carousel-item active">
+          <img src="/images/1.jpg" class="d-block w-100 h-50" alt="1">
+          <div class="carousel-caption d-none d-md-block">
+            1
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/images/2.jpg" class="d-block w-100 h-50" alt="2">
+          <div class="carousel-caption d-none d-md-block">
+            2
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/images/3.jpg" class="d-block w-100 h-50" alt="3">
+          <div class="carousel-caption d-none d-md-block">
+            3
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/images/4.jpg" class="d-block w-100 h-50" alt="1">
+          <div class="carousel-caption d-none d-md-block">
+            1
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/images/5.jpg" class="d-block w-100 h-50" alt="2">
+          <div class="carousel-caption d-none d-md-block">
+            2
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/images/6.jpg" class="d-block w-100 h-50" alt="3">
+          <div class="carousel-caption d-none d-md-block">
+            3
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#simpleCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#simpleCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <span>Nulla in dolore magna pariatur do ad. Fugiat veniam ea commodo commodo est quis laborum veniam dolor cillum.
       Anim nulla ullamco cupidatat ex. Eu in Lorem magna id incididunt culpa ea cupidatat fugiat labore eiusmod elit in.
       Esse sint cupidatat sunt esse consequat quis tempor in nisi dolore reprehenderit magna laborum pariatur. Id ea do
       magna ad magna ut exercitation incididunt esse.</span>
   </div>
+  <script type="module" src="/main.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/js/performance.js"></script>
 </body>
 </html>
